@@ -1,26 +1,10 @@
 {
   "files": {
-    "main.css": "/go-merch-store/static/css/main.93f80f61.css",
-    "main.js": "/go-merch-store/static/js/main.183e2c04.js",
-    "static/js/104.ae665c68.chunk.js": "/go-merch-store/static/js/104.ae665c68.chunk.js",
-    "static/js/544.6ee4d8fe.chunk.js": "/go-merch-store/static/js/544.6ee4d8fe.chunk.js",
-    "static/js/483.af105444.chunk.js": "/go-merch-store/static/js/483.af105444.chunk.js",
-    "static/js/385.de313210.chunk.js": "/go-merch-store/static/js/385.de313210.chunk.js",
-    "static/js/609.c17c4527.chunk.js": "/go-merch-store/static/js/609.c17c4527.chunk.js",
-    "static/js/708.e0b9972e.chunk.js": "/go-merch-store/static/js/708.e0b9972e.chunk.js",
-    "static/js/186.77c2454f.chunk.js": "/go-merch-store/static/js/186.77c2454f.chunk.js",
-    "static/js/128.f09c285e.chunk.js": "/go-merch-store/static/js/128.f09c285e.chunk.js",
-    "index.html": "/go-merch-store/index.html",
-    "main.93f80f61.css.map": "/go-merch-store/static/css/main.93f80f61.css.map",
-    "main.183e2c04.js.map": "/go-merch-store/static/js/main.183e2c04.js.map",
-    "104.ae665c68.chunk.js.map": "/go-merch-store/static/js/104.ae665c68.chunk.js.map",
-    "544.6ee4d8fe.chunk.js.map": "/go-merch-store/static/js/544.6ee4d8fe.chunk.js.map",
-    "483.af105444.chunk.js.map": "/go-merch-store/static/js/483.af105444.chunk.js.map",
-    "385.de313210.chunk.js.map": "/go-merch-store/static/js/385.de313210.chunk.js.map",
-    "609.c17c4527.chunk.js.map": "/go-merch-store/static/js/609.c17c4527.chunk.js.map",
-    "708.e0b9972e.chunk.js.map": "/go-merch-store/static/js/708.e0b9972e.chunk.js.map",
-    "186.77c2454f.chunk.js.map": "/go-merch-store/static/js/186.77c2454f.chunk.js.map",
-    "128.f09c285e.chunk.js.map": "/go-merch-store/static/js/128.f09c285e.chunk.js.map"
+    "main.css": "/event-planner/static/css/main.7acaea2f.css",
+    "main.js": "/event-planner/static/js/main.07d3183d.js",
+    "index.html": "/event-planner/index.html",
+    "main.7acaea2f.css.map": "/event-planner/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/event-planner/static/js/main.07d3183d.js.map"
   },
-  "entrypoints": ["static/css/main.93f80f61.css", "static/js/main.183e2c04.js"]
+  "entrypoints": ["static/css/main.7acaea2f.css", "static/js/main.07d3183d.js"]
 }

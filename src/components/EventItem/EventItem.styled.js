@@ -4,36 +4,35 @@ export const StyledItem = styled.li`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 272px;
+  width: 100%;
   height: 480px;
   overflow: hidden;
   border-radius: 12px;
   background-color: ${p => p.theme.colors.bgEvent};
   box-shadow: 2px 4px 9px 0px #a68dae47;
-
   &:hover button {
     display: block;
   }
   @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: 332px;
+    /* with: 332px; */
   }
 
   @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
-    width: 302px;
+    /* width: 302px; */
   }
 `;
 
 export const StyledImage = styled.img`
-  width: 272px;
+  /* width: 272px; */
   height: 336px;
   box-shadow: 2px 4px 9px 0px #a68dae47;
 
   @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: 332px;
+    /* width: 332px; */
   }
 
   @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
-    width: 302px;
+    /* width: 302px; */
   }
 `;
 export const CategoryWrap = styled.div`
@@ -70,22 +69,22 @@ export const PriorityStyled = styled.p`
 `;
 
 export const InformationWrap = styled.div`
-  position: relative;
-  width: 272px;
+  position: absolute;
+  bottom: 0;
+  /* width: 272px; */
   height: 144px;
-  padding: 8px 16px;
+  padding: 16px;
   background-color: ${p => p.theme.colors.bgEvent};
   transition: transform ${p => p.theme.transitions.all};
   li:hover & {
-    transform: translateY(-40px);
-    min-height: 200px;
+    transform: translateY(-20px);
   }
   @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: 332px;
+    /* width: 332px; */
   }
 
   @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
-    width: 302px;
+    /* width: 302px; */
   }
 `;
 
@@ -96,22 +95,21 @@ export const DateWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 272px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   background-color: #ffffffcc;
   color: ${p => p.theme.colors.violet};
   @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: 332px;
+    /* width: 332px; */
   }
 
   @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
-    width: 302px;
+    /* width: 302px; */
   }
 `;
 
-export const EventsTitle = styled.p`
-  height: 48px;
+export const EventsTitle = styled.h3`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -120,11 +118,13 @@ export const EventsTitle = styled.p`
 `;
 
 export const EventDescription = styled.p`
-  height: 48px;
+  width: 100%;
+  height: auto;
+  line-height: 1.42;
   font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0px;
   text-align: left;
+  letter-spacing: 0px;
+  overflow: hidden;
 `;
 
 export const MoreInfoLink = styled.button`
@@ -142,4 +142,5 @@ export const MoreInfoLink = styled.button`
   border: ${p => p.theme.borders.none};
   color: ${p => p.theme.colors.textBtn};
   background-color: ${p => p.theme.colors.violet};
+  transition: display ${p => p.theme.transitions.all};
 `;

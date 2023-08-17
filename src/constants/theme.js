@@ -20,7 +20,7 @@ export const theme = {
   },
   space: [0, 2, 4, 8, 16, 32, 40, 55, 64, 128, 256],
   fonts: {
-    body: 'Poppins,  sans-serif',
+    body: 'Poppins',
   },
   fontSizes: {
     s: '14px',

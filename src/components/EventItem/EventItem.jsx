@@ -8,39 +8,27 @@ import {
   InformationWrap,
   DateWrap,
   EventsTitle,
+  EventDescription,
   MoreInfoLink,
 } from './EventItem.styled';
 import DefaultImg from 'images/events/bg-default.png';
+import { colorPicker } from 'helpers/colorPicker';
 
-const EventItem = ({ event }) => {
+const EventItem = ({ event, locationFrom }) => {
   const { name, description, location, img, date, category, priority, id } =
     event;
   const navigate = useNavigate();
-  let colorPriority;
-  switch (priority) {
-    case 'High':
-      colorPriority = { color: '#FF2B77' };
-      break;
-    case 'Medium':
-      colorPriority = { color: '#E2A300' };
-      break;
-    case 'Low':
-      colorPriority = { color: '#6BD475' };
-      break;
-    default:
-      colorPriority = { color: '#7B61FF' };
-      break;
-  }
+  const color = colorPicker(priority);
   return (
     <StyledItem>
       {img !== '' ? (
-        <StyledImage alt={name} src={DefaultImg} />
+        <StyledImage alt={name} src={img} loading="lazy" />
       ) : (
-        <StyledImage alt="Default" src={DefaultImg} />
+        <StyledImage alt="Default" src={DefaultImg} loading="lazy" />
       )}
       <AddInfoWrap>
         <CategoryStyled>{category}</CategoryStyled>
-        <PriorityStyled style={colorPriority}>{priority}</PriorityStyled>
+        <PriorityStyled style={color}>{priority}</PriorityStyled>
       </AddInfoWrap>
       <InformationWrap>
         <DateWrap>
@@ -48,8 +36,11 @@ const EventItem = ({ event }) => {
           <p>{location}</p>
         </DateWrap>
         <EventsTitle>{name}</EventsTitle>
-        <p>{description}</p>
-        <MoreInfoLink onClick={() => navigate(`/event/${id}`)}>
+        <EventDescription>{description}</EventDescription>
+        <MoreInfoLink
+          onClick={() => navigate(`/event/${id}`)}
+          $state={locationFrom}
+        >
           More info
         </MoreInfoLink>
       </InformationWrap>

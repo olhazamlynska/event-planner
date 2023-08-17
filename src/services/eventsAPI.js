@@ -12,3 +12,9 @@ export const fetchOneEvent = async id => {
   const { data } = await axios.get(`/events/${id}`);
   return data;
 };
+
+export const removeEvent = async id => {
+  const data = await axios.delete(`/events/${id}`);
+  console.log(data);
+  return data;
+};

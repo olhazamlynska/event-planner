@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   display: ${p => (p.show === 'none' ? 'none' : 'block')};
   font-family: inherit;
   font-size: 24px;
@@ -13,6 +13,8 @@ export const Title = styled.h2`
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
-    margin-bottom: 24px;
+  }
+  @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
+    margin-bottom: 14px;
   }
 `;

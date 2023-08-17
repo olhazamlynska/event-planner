@@ -17,7 +17,7 @@ export const StyledWrap = styled.div`
     width: ${p => (p.active === 'true' ? '170px' : '129px')};
     color: ${p => p.theme.colors.selectBG};
   }
-  @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
+  @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
     width: 129px;
   }
 `;
@@ -42,18 +42,19 @@ export const StyledSelect = styled.button`
   border-radius: ${p => p.theme.radii.normal};
   transition: background-color ${p => p.theme.transitions.all};
   @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: ${p => (p.active === 'true' ? '160px' : '129px')};
+    right: 0;
+    width: 129px;
     padding: ${p => (p.active === 'true' ? '16px 24px' : '16px')};
   }
-  @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-    width: 129px;
+  @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
+    padding: 16px 24px;
   }
   &:hover {
     color: ${p => p.theme.colors.selectBG};
     background-color: ${p => p.theme.colors.violet};
   }
   &:hover svg {
-    stroke: ${p => p.theme.colors.selectBG};
+    stroke: ${p => p.theme.colors.lightGrey};
   }
   & svg {
     stroke: ${p => (p.active === 'true' ? '#7B61FF' : '#3F3F3F')};
@@ -112,5 +113,5 @@ export const BigArrowIconStyled = styled(BigArrowIcon)`
   position: absolute;
   right: 24px;
   transform: rotate(${p => (p.direction === 'true' ? '0' : '180deg')});
-  fill: ${p => p.theme.colors.lightGrey};
+  stroke: ${p => p.theme.colors.lightGrey};
 `;

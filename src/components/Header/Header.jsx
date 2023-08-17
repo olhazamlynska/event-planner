@@ -1,6 +1,5 @@
 import Logo from 'components/Logo';
 import { StyledHeader, MobileWrapp } from './Header.styled.js';
-import { useState } from 'react';
 
 import { useMedia } from 'react-use';
 import LangSwitcher from './LangSwitcher';
@@ -10,20 +9,15 @@ import Container from 'components/Container/Container.jsx';
 const Header = () => {
   const isMobileDevice = useMedia('(max-width: 767px)');
 
- 
   return (
     <StyledHeader>
       <Container>
         <MobileWrapp>
           <Logo />
-          {!isMobileDevice && (
-            <SearchInput  />
-          )}
+          {!isMobileDevice && <SearchInput />}
           <LangSwitcher />
         </MobileWrapp>
-        {isMobileDevice && (
-          <SearchInput  />
-        )}
+        {isMobileDevice && <SearchInput />}
       </Container>
     </StyledHeader>
   );

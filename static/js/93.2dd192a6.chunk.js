@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkevent_planner=self.webpackChunkevent_planner||[]).push([[93],{9794:function(n,e,t){t.d(e,{Z:function(){return u.Z}});var u=t(3623)},3093:function(n,e,t){t.r(e),t.d(e,{default:function(){return c}});var u=t(9794),r=t(184),c=function(){return(0,r.jsx)(u.Z,{children:"NotFound"})}}}]);
+//# sourceMappingURL=93.2dd192a6.chunk.js.map

@@ -32,6 +32,7 @@ export const StyleLink = styled(Link)`
   }
 
   &:hover {
+    color: ${p => p.theme.colors.linkHover};
     background-color: ${p => p.theme.colors.selectBG};
   }
   &:hover svg {

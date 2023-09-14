@@ -138,6 +138,7 @@ export const MoreInfoLink = styled.button`
   padding: 10px 24px 10px 24px;
   margin-left: auto;
   margin-top: 8px;
+  cursor: pointer;
   border-radius: 8px;
   border: ${p => p.theme.borders.none};
   color: ${p => p.theme.colors.textBtn};

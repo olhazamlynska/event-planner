@@ -54,7 +54,7 @@ export const StyledSelect = styled.button`
     background-color: ${p => p.theme.colors.violet};
   }
   &:hover svg {
-    stroke: ${p => p.theme.colors.lightGrey};
+    stroke: ${p => p.theme.colors.selectBG};
   }
   & svg {
     stroke: ${p => (p.active === 'true' ? '#7B61FF' : '#3F3F3F')};

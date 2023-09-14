@@ -2,10 +2,11 @@ import { styled } from 'styled-components';
 export const WrapStyled = styled.div`
   width: 272px;
   margin: 0 auto;
-    @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-  width: 688px;
+  @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
+    width: 688px;
+  }
   @media screen and (min-width: ${p => p.theme.breakpoints[3]}) {
-width: 628px;
+    width: 628px;
   }
 `;
 

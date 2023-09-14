@@ -8,6 +8,7 @@ export const BackBtn = styled(Link)`
   justify-content: space-between;
   width: 67px;
   height: 24px;
+  cursor: pointer;
   margin-top: 42px;
   margin-bottom: 24px;
 `;
